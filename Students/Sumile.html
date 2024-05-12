@@ -21,20 +21,20 @@
     </div><br><br>
     <div class="content-box-text">
       <div class="text-content-text">
-        <p><b>Name: </b>Princess Resheill Sumile</p>
+        <p><b>Name: </b>Prencess Resheill Sumile</p>
         <p><b>Age: </b>18</p>
         <p><b>Status: </b>Married</p>
         <p><b>Birth Date: </b>October 06, 2005</p>
         <p><b>Sex: </b>Female</p>
         <p><b>Hobbies: </b>Sleeping during class</p>
         <p><b>Skills & Tallent: </b>Dancing, Singin, Bullying, </p>
-        <p><b>Best Friends: </b><a href="/Students/Trasona.html">Rose Jean Trasona</a><a href="/Students/Sani.html">, Princess Sani</a><a href="/Students/Didato.html">Gillian Didato</a></p>
+        <p><b>Best Friends: </b><a href="/Students/Trasona.html">Rose Jean Trasona</a><a href="/Students/Sani.html">, Princess Sani</a><a href="/Students/Didato.html">, Gillian Didato</a></p>
       </div>
     </div><br><br>
     <div class="content-box">
       <div class="image-container-image">
-        <img src="">
-        <img src="">
+        <img src="/img/Areola.jpg">
+        <img src="/Picture/Sumile2.jpg">
         <img src="">
         <img src="">
       </div>
@@ -44,6 +44,23 @@
         <p><a href="../index.html" class="back">Back</a></p>
       </div>
     </div>
+
+    <div class="popup">
+      <span>&times;</span>
+      <img src="img/Areola.jpg">  
+    </div>
+
+    <script>
+      document.querySelectorAll('.image-container-image img').forEach(image =>{
+        image.onclick = () =>{
+          document.querySelector('.popup').style.display = 'block';
+          document.querySelector('.popup img').src = image.getAttribute('src');
+        }
+      });
+      document.querySelector('.popup span').onclick = () => {
+        document.querySelector('.popup').style.display = 'none';
+      }
+    </script>
     
 </body>
 

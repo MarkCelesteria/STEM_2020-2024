@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../students.css">
+    <title>Students</title>
+</head>
+
+<body>
+    <div class="content-box">
+        <div class="image-container">
+            <img src="../Picture/Sani.jpg" alt="Princess Sani">
+        </div>
+        <div class="text-content">
+            <p class=quotes>""</p>
+            <p></p>
+            <p></p>
+        </div>
+    </div><br><br>
+    <div class="content-box-text">
+      <div class="text-content-text">
+        <p><b>Name: </b>Princess Hanneyah R. Sani</p>
+        <p><b>Age: </b>18</p>
+        <p><b>Birth Date: </b>October 06, 2005</p>
+        <p><b>Sex: </b>Female</p>
+        <p><b>Hobbies: </b>Dancing, Singing, Manghapak</p>
+        <p><b>Skills & Tallent: </b>Dancing, Singing</p>
+        <p><b>Best Friends: </b><a href="/Students/Trasona.html">Rose Jean Trasona</a><a href="/Students/Sumile.html">, Prencess Resheill Sumile</a><a href="/Students/Didato.html">, Gillian Didato</a></p>
+      </div>
+    </div><br><br>
+    <div class="content-box">
+      <div class="image-container-image">
+        <img src="">
+        <img src="">
+        <img src="">
+        <img src="">
+      </div>
+    </div><br><br>
+    <div class="content-box">
+      <div class="back-text">
+        <p><a href="../index.html" class="back">Back</a></p>
+      </div>
+    </div>
+
+    <div class="popup">
+        <span>&times;</span>
+        <img src="img/Areola.jpg">  
+    </div>
+
+    <script>
+        document.querySelectorAll('.image-container-image img').forEach(image =>{
+          image.onclick = () =>{
+            document.querySelector('.popup').style.display = 'block';
+            document.querySelector('.popup img').src = image.getAttribute('src');
+          }
+        });
+        document.querySelector('.popup span').onclick = () => {
+          document.querySelector('.popup').style.display = 'none';
+        }
+      </script>
+    
+</body>
+
+</html>

@@ -1,6 +1,7 @@
 body {
     background-color: #e07272;
-    font-family: 'Times New Roman', Times, serif
+    font-family: 'Times New Roman', Times, serif;
+    background-image: url('STEM_Background.png');
 }
 @font-face {
   font-family: "Raleway";
@@ -44,6 +45,10 @@ body {
   display: none;
   color: #FFFFFF;
 }
+
+#btn {
+  cursor: pointer;
+}
 @media (max-width: 600px) {
   .menu {
     width: 100%;
@@ -72,6 +77,10 @@ body {
     background-color: darkred;
     font-size: 40px;
 }
+#Title a {
+  color: #FFB3B3;
+  margin: 0;
+}
 .container {
     display: flex;
     gap: 1rem;
@@ -80,6 +89,11 @@ body {
     margin: 1rem auto 0 auto;
     flex-wrap: wrap;
 }
+.container img {
+  height: 200px;
+  width: 100%;
+  border-radius: 10px;
+}
 .image-container1{
     width: 170px;
     background-color: darkred;
@@ -87,25 +101,94 @@ body {
     text-align: center;
     height: 250px;
 }
+
+.image-container-image video {
+  height: auto;
+  border-radius: 10px;
+  height:200px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.image-container-image {
+  padding:20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.image-container-image img {
+  height: auto;
+  border-radius: 10px;
+  height:150px;
+  overflow: hidden;
+  cursor: pointer;
+  margin: 3px;
+}
+.image-container-image img:hover {
+  transform: scale(0.9);
+}
+
+.content-box-about {
+  width: 85%;
+  margin: 0 auto;
+  background-color: #0000008b;
+  padding: 20px;
+  color: white;
+}
+.content-box {
+  width: 90%;
+  margin: 0 auto;
+  background-color: #650B0BDB;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+}
+
+.popup {
+  position: fixed;
+  top: 0; ; left: 0;
+  background: rgba(0,0,0,.9);
+  height: 100%;
+  width: 100%;
+  z-index: 100;
+  display: none;
+}
+.popup span {
+  position: absolute;
+  top: 0; right: 10px;
+  font-size: 60px;
+  font-weight: bolder;
+  color: #FFFFFF;
+  cursor: pointer;
+  z-index: 100;
+}
+.popup img {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  height: 90%;
+  width: auto;
+  object-fit: cover;
+}
+@media (max-width: 760px) {
+  .popup img {
+    width: 95%;
+  }
+}
+
 a {
     text-decoration: none;
     margin: 10px;
     transition: transform 0.3s ease;
 }
-img {
-    height: 200px;
-    width: 100%;
-    border-radius: 10px;
-}
 a:hover {
     transform: scale(0.9);
 }
+
 .paragraph {
     color: rgb(255, 255, 255);
     background-color:darkgoldenrod;
     text-align: center;
     border: solid darkgoldenrod;
-    font-size: 14px;
+    font-size: 12px;
     border-radius: 5px
 }
 #GenderB {
@@ -129,4 +212,29 @@ a:hover {
     background-color: darkred;
     color:#ffffff;
     font-family: 'Times New Roman', Times, serif;
+}
+#Video {
+  font-size: 40px;
+  border: solid;
+  text-align: center;
+  background-color: darkred;
+  color:white;
+}
+#Album {
+  font-size: 40px;
+  border: solid;
+  text-align: center;
+  background-color: darkred;
+  color:white;
+}
+#About {
+  font-size: 40px;
+  border: solid;
+  text-align: center;
+  background-color: darkred;
+  color:white;
+}
+
+#center {
+  text-align: center;
 }

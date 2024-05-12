@@ -10,7 +10,7 @@
 
 <body>
   <nav class="navbar">
-    <a href="#" class="logo">Tomas Cabili National High School</a>
+    <a href="https://web.facebook.com/tomascabilinationalhighschool1971" target="_blank" class="logo">Tomas Cabili National High School</a>
     <input type="checkbox" id="toggler" />
     <label for="toggler">
       <i class="ri-menu-line"></i>
@@ -27,16 +27,19 @@
           <a href="#Teacher">Teachers</a>
         </li>
         <li>
-          <a href="#">Album</a>
+          <a href="#Video">Memories</a>
         </li>
         <li>
-          <a href="#">About</a>
+          <a href="#Album ">Album</a>
+        </li>
+        <li>
+          <a href="#About">About</a>
         </li>
       </ul>
     </div>
   </nav>
-    <p id="Title">Congratulations On Graduating STEM<br>S.Y.2022-2024</p>
-  
+    <p id="Title"><a id="btn" loop onclick="audio.play();">Congratulations On Graduating</a> <a href="https://web.facebook.com/tomasshs.stem" target="_blank">STEM</a><br>S.Y.2022-2024</p>
+
     <p id="GenderB">Boys</p>
     <div class="container">
 
@@ -256,15 +259,70 @@
         <div class="image-container1">
            <a href="Teachers/Nijaga.html" style="display: flex; justify-content: center; align-items: flex-end;">
             <img src="/img/Nijaga.jpg" alt="Nijaga"></a>
-           <p><a href="Teachers/Nijaga.html" class="paragraph" style="font-size: 90%;">Sheim Daniel Nijaga</a></p>
+           <p><a href="Teachers/Nijaga.html" class="paragraph">Sheim Daniel Nijaga</a></p>
         </div>
           
         <div class="image-container1">
            <a href="Teachers/Orbigoso.html" style="display: flex; justify-content: center; align-items: flex-end;">
               <img src="/img/Orbigoso.jpg" alt="Orbigoso"></a>
-              <p><a href="Teachers/Orbigoso.html" class="paragraph" style="font-size:88%">Johanna Jane Orbigoso</a></p>
+              <p><a href="Teachers/Orbigoso.html" class="paragraph">Johanna Jane Orbigoso</a></p>
         </div>
     </div>
+
+    <p id="Video">Memories</p>
+    <div class="content-box">
+      <div class="image-container-image">
+        <video controls src="437087596_7402432709871295_4804339375232860200_n.mp4"></video>
+      </div>
+    </div>
+
+    <p id="Album">Album</p>
+    <div class="content-box">
+      <div class="image-container-image">
+        <img src="img/Areola.jpg">
+        <img src="Picture/Sumile2.jpg">
+      </div>
+    </div>
+
+    <p id="About">About</p>
+    <div class="content-box-about">
+        <p id="center">About This Webpage</p>
+        <p>This might sounds like my f</p>
+      </div>
+    </div>
+
+    <div class="popup">
+      <span>&times;</span>
+      <img src="img/Areola.jpg">  
+    </div>
+
+    <script>
+      let isPlaying = false;
+      const audio = new Audio();
+      audio.src = "Muisc.mp3";
+      audio.loop = true;
+
+      document.getElementById('btn').addEventListener('click', function() {
+        if (!isPlaying) {
+          audio.play();
+          isPlaying = true;
+        } else {
+          audio.pause();
+          audio.currentTime = 0;
+          isPlaying = false;
+        }
+      })
+
+      document.querySelectorAll('.image-container-image img').forEach(image =>{
+        image.onclick = () =>{
+          document.querySelector('.popup').style.display = 'block';
+          document.querySelector('.popup img').src = image.getAttribute('src');
+        }
+      });
+      document.querySelector('.popup span').onclick = () => {
+        document.querySelector('.popup').style.display = 'none';
+      }
+    </script>
           
   </body>
   

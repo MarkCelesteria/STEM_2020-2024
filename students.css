@@ -2,7 +2,6 @@ body {
     font-family: Arial, sans-serif;
     background-color: #E58484;
 }
-
 .content-box {
     width: 80%;
     margin: 0 auto;
@@ -41,8 +40,12 @@ body {
     height: auto;
     border-radius: 10px;
     height:200px;
+    overflow: hidden;
+    cursor: pointer;
 }
-
+.image-container-image img:hover {
+    transform: scale(0.9);
+}
 .text-content {
     flex: 2;
     padding: 20px;
@@ -71,19 +74,49 @@ body {
     font-size: 30px;
     justify-content: center;
     font-weight: 900;
-    /*color: #FFBBF2EB;*/
     background: linear-gradient(45deg, #FF8EEAEB, #8DB7DD, #80D581);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
 }
 p {
-  color:white;
+    color:white;
 }
 b {
-  color: #A29316;
+    color: #A29316;
 }
 p a {
-  color:white;
-  text-decoration: none;
+    color:white;
+    text-decoration: none;
+} 
+.popup {
+    position: fixed;
+    top: 0; ; left: 0;
+    background: rgba(0,0,0,.9);
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    display: none;
+}
+.popup span {
+    position: absolute;
+    top: 0; right: 10px;
+    font-size: 60px;
+    font-weight: bolder;
+    color: #FFFFFF;
+    cursor: pointer;
+    z-index: 100;
+}
+.popup img {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    height: 90%;
+    width: auto;
+    object-fit: cover;
+}
+@media (max-width: 760px) {
+    .popup img {
+        width: 95%;
+}
 }
