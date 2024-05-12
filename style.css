@@ -110,6 +110,7 @@ body {
   cursor: pointer;
 }
 .image-container-image {
+  flex: 2;
   padding:20px;
   display: flex;
   flex-wrap: wrap;
