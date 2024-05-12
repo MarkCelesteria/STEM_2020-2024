@@ -1,7 +1,7 @@
 body {
     background-color: #e07272;
     font-family: 'Times New Roman', Times, serif;
-    background-image: url('STEM_Background.png');
+    background-image: url('Students/Logo/STEM_Background.png');
 }
 @font-face {
   font-family: "Raleway";
@@ -115,6 +115,7 @@ body {
   height:200px;
   overflow: hidden;
   cursor: pointer;
+  margin: 3px;
 }
 .image-container-image {
   flex: 2;
