@@ -22,15 +22,23 @@ body {
 .navbar a {
   text-decoration: none;
   color: gold;
+  justify-content: center;
 }
 .logo {
   margin-right:50px;
+
+}
+.navbar img{
+  height: 50px;
+  width: 50px;
+  align-items: center;
 }
 .list {
   list-style: none;
   display: flex;
   pointer-events: none;
   gap: 10px;
+  justify-content: right;
 }
 .list *{
   transition: 0.2s
