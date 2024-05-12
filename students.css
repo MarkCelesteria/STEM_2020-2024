@@ -111,12 +111,18 @@ p a {
     position: absolute;
     top: 50%; left: 50%;
     transform: translate(-50%, -50%);
-    height: 90%;
-    width: auto;
+    height: 95%;
     object-fit: cover;
-}
-@media (max-width: 760px) {
+  }
+  @media (max-height: 1500px) {
     .popup img {
-        width: 95%;
-}
-}
+      height: 95%;
+      width: auto;
+    }
+  }
+  @media (max-width: 1000px) {
+    .popup img {
+      height: auto;
+      width: 95%;
+    }
+  }
