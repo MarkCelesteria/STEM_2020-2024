@@ -64,10 +64,18 @@ body {
     text-align: center;
 }
 .back {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 50px;
-    text-align: center;
-    justify-content: center;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    font-size: 18px;
+    background-color: #cccccc79;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 30px; 
+    height: 30px;
+    text-align: center; 
+    line-height: 30px;
 }
 .quotes {
     font-family: cursive;

@@ -1,20 +1,22 @@
 let isPlaying = false;
 const audio = new Audio();
-audio.src = "Muisc.mp3";
 audio.loop = true;
 var video = document.getElementById("myVideo");
 var closeButton = document.getElementById("closeButton");
 
-document.getElementById('btn').addEventListener('click', function() {
-    if (!isPlaying) {
-        audio.play();
-        isPlaying = true;
-    } else {
-        audio.pause();
-        audio.currentTime = 0;
-        isPlaying = false;
-    }
-})
+document.querySelectorAll('.btn').forEach(btn => {
+  btn.addEventListener('click', function() {
+      audio.src = this.getAttribute('data-src');
+      if (!isPlaying) {
+          audio.play();
+          isPlaying = true;
+      } else {
+          audio.pause();
+          audio.currentTime = 0;
+          isPlaying = false;
+      }
+  });
+});
 
 document.querySelectorAll('.image-container-image img').forEach(image =>{
     image.onclick = () =>{
@@ -24,6 +26,11 @@ document.querySelectorAll('.image-container-image img').forEach(image =>{
 });
 document.querySelector('.popup span').onclick = () => {
     document.querySelector('.popup').style.display = 'none';
+}
+document.querySelector('.popup').onclick = (event) => {
+    if(event.target === document.querySelector('.popup')){
+        document.querySelector('.popup').style.display = 'none';
+    }
 }
 
 video.ondblclick = function() {

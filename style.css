@@ -1,5 +1,6 @@
 body {
-    background-color: #e07272;
+    background-color: #Dfd0c0;
+
     font-family: 'Times New Roman', Times, serif;
     background-image: url('Students/Logo/STEM_Background.png');
 }
@@ -15,13 +16,13 @@ body {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  background-color: darkred;
+  background-color: #650000;
   padding: 20px;
   box-shadow: 0 0 15px black;
 }
 .navbar a {
   text-decoration: none;
-  color: gold;
+  color:  goldenrod;
   justify-content: center;
 }
 .logo {
@@ -53,7 +54,7 @@ body {
   color: #FFFFFF;
 }
 
-#btn {
+.btn {
   cursor: pointer;
 }
 @media (max-width: 600px) {
@@ -81,11 +82,11 @@ body {
     color: #FFB3B3;
     text-shadow: 3px 3px 4px rgb(0, 0, 0); 
     width: 100%;
-    background-color: darkred;
+    background-color: #650000;
     font-size: 40px;
 }
 #Title a {
-  color: #FFB3B3;
+  color: goldenrod;
   margin: 0;
 }
 .container {
@@ -103,10 +104,10 @@ body {
 }
 .image-container1{
     width: 170px;
-    background-color: darkred;
+    background-color: #650000;
     border-radius: 10px;
     text-align: center;
-    height: 250px;
+    height: 245px;
 }
 
 .image-container-image video {
@@ -204,27 +205,29 @@ a:hover {
     text-align: center;
     border: solid darkgoldenrod;
     font-size: 12px;
-    border-radius: 5px
+    border-radius: 5px;
+    position: relative;
+    top: -10px;
 }
 #GenderB {
     font-size: 40px;
     border: solid;
     text-align: center;
-    background-color: darkred;
+    background-color: #650000;
     color:white;
 }
 #GenderG {
     font-size: 40px;
     border: solid;
     text-align: center;
-    background-color: darkred;
+    background-color: #650000;
     color:white;
 }
 #Teacher {
     font-size: 40px;
     border: solid;
     text-align: center;
-    background-color: darkred;
+    background-color: #650000;
     color:#ffffff;
     font-family: 'Times New Roman', Times, serif;
 }
@@ -232,21 +235,21 @@ a:hover {
   font-size: 40px;
   border: solid;
   text-align: center;
-  background-color: darkred;
+  background-color: #650000;
   color:white;
 }
 #Album {
   font-size: 40px;
   border: solid;
   text-align: center;
-  background-color: darkred;
+  background-color: #650000;
   color:white;
 }
 #About {
   font-size: 40px;
   border: solid;
   text-align: center;
-  background-color: darkred;
+  background-color: #650000;
   color:white;
 }
 
