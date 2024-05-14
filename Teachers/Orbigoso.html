@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="x-icon" href="Logo\STEM Logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../students.css">
+    <title>Students</title>
+</head>
+
+<body>
+    <div class="content-box">
+        <div class="image-container">
+            <img src="../Orbigoso/Sani.jpg" alt="Johanna">
+        </div>
+        <div class="text-content">
+            <p class=quotes>"You cannot help others without helping "</p>
+            <p>Bakit ka nag Teacher: <i>"Kay scholar sa DOST"</i></p>
+            <p></p>
+        </div>
+    </div><br><br>
+    <div class="content-box-text">
+      <div class="text-content-text">
+        <p><b>Name: </b>Johanna Jane C. Orbigoso</p>
+        <p><b>Age: </b>Forever 25</p>
+        <p><b>Birth Date: </b>January 17, 19##</p>
+        <p><b>Status: </b>Choose Daddy</p>
+        <p><b>Sex: </b>Female</p>
+        <p><b>Hobbies: </b>Checking Research, Readung Novel</p>
+        <p><b>Skills & Tallent: </b>Chess</p>
+        <p><b>Best Friends: </b><a href="Nijaga.html">Daddy Sheim</a></p>
+
+      </div>
+    </div><br><br>
+    <div class="content-box">
+      <div class="image-container-image">
+        <img src="">
+        <img src="">
+        <img src="">
+        <img src="">
+      </div>
+    </div><br><br>
+    
+    <p><a href="../Home.html" class="back">X</a></p>
+
+    <div class="popup">
+        <span>&times;</span>
+        <img src="img/Areola.jpg">  
+    </div>
+
+    <script>
+        document.querySelectorAll('.image-container-image img').forEach(image =>{
+          image.onclick = () =>{
+            document.querySelector('.popup').style.display = 'block';
+            document.querySelector('.popup img').src = image.getAttribute('src');
+          }
+        });
+        document.querySelector('.popup span').onclick = () => {
+          document.querySelector('.popup').style.display = 'none';
+        }
+      </script>
+    
+</body>
+
+</html>

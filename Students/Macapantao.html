@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="x-icon" href="Logo\STEM Logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../students.css">
+    <title>Students</title>
+</head>
+
+<body>
+    <div class="content-box">
+        <div class="image-container">
+            <img src="../Picture/Sumile2.jpg" alt="Ayesha Macabangkit">
+        </div>
+        <div class="text-content">
+            <p class=quotes>"A better me is coming. "</p>
+            <p>Because the carrier I choose is naa sa stem.</p>
+            <p>Wag ka kasi panay sunod sakanya ayan tuloy <i>"lumilipad nanaman yung isip ko"</i> dapay kasi palaging unahin school.</p>
+        </div>
+    </div><br><br>
+    <div class="content-box-text">
+      <div class="text-content-text">
+        <p><b>Name: </b>Jamilah M. Macapantao </p>
+        <p><b>Age: </b>18</p>
+        <p><b>Status: </b>Married (Lee dong wook)</p>
+        <p><b>Birth Date: </b>September 16, 2006</p>
+        <p><b>Sex: </b>Female</p>
+        <p><b>Hobbies: </b>Eating, Travelling</p>
+        <p><b>Skills & Tallent: </b></p>
+        <p><b>Best Friends: </b> Too many to mentioned
+      </div>
+    </div><br><br>
+    <div class="content-box">
+      <div class="image-container-image">
+        <img src="img/Areola.jpg">
+        <img src="Picture/Sumile2.jpg">
+        <img src="">
+        <img src="">
+      </div>
+    </div><br><br>
+
+    <p><a href="../Home.html" class="back">X</a></p>
+
+
+    <div class="popup">
+      <span>&times;</span>
+      <img src="img/Areola.jpg">  
+    </div>
+
+    <script>
+      document.querySelectorAll('.image-container-image img').forEach(image =>{
+        image.onclick = () =>{
+          document.querySelector('.popup').style.display = 'block';
+          document.querySelector('.popup img').src = image.getAttribute('src');
+        }
+      });
+      document.querySelector('.popup span').onclick = () => {
+        document.querySelector('.popup').style.display = 'none';
+      }
+    </script>
+    
+</body>
+
+</html>
