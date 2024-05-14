@@ -44,6 +44,7 @@ body {
     height: 200px;
     border-radius: 10px;
     cursor: pointer;
+
 }
 .image-container-image img {
     max-width: 100%;
@@ -139,7 +140,7 @@ p a {
       width: auto;
     }
   }
-@media (max-width: 1000px) {
+@media (max-width: 700px) {
     .popup img {
         height: auto;
         width: 95%;
