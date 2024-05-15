@@ -4,10 +4,6 @@ body {
     font-family: 'Times New Roman', Times, serif;
     background-image: url('Students/Logo/STEM_Background.png');
 }
-@font-face {
-  font-family: "Raleway";
-  src: url(../Raleway-Black.ttf);
-}
 :root {
   scroll-behavior: smooth;
 }
@@ -151,7 +147,6 @@ body {
   border: 2px solid #ccc;
   border-radius: 10px;
   height: auto;
-  overflow: hidden;
 } 
 
 .popup {
