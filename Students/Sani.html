@@ -12,14 +12,25 @@
 <body>
     <div class="content-box">
         <div class="image-container">
-            <img src="../Picture/Sani.jpg" alt="Princess Sani">
+            <img src="img/Trail Grad.jpg" alt="Princess Sani">
         </div>
         <div class="text-content">
             <p class=quotes>"Mugraduate man nga dli fresh, importante dli depress."</p>
-            <p>Kay STEM major man si mingyu.</p>
-            <p></p>
+            <p><b>Why do you choose STEM? </b><i>Kay STEM major man si mingyu.</i></p>
+            <br><a onclick="showBox()">More...</a>
         </div>
     </div><br><br>
+
+    <div class="word-box" onclick="hideBox(event)">
+      <div class="myBox">
+        <p><b>What People Around You thinks of You.</b></p>
+        <p>Kini sya kay gina admit nga sya daw ang asawa ni Jeonghan og wala koy laban dra kay pareha rami delulu. Ito ay walang iba kundi ang gahi nga Princess. Princess Haneyah R. Sani ng STEM.</p>
+        <p>Si sani at first kay sabaan gyud sauna pero nag ka dugay na bali man ako namay na sabaan, sya naman ang naging nonchalant. Nonchalant yarn aw HAHAHAHA.</p>
+        <p>Bitaw san, makita nako ang dedication and perseverance nimo as a student, daughter and ate. The way you respect and the way you care to your siblings, apil na diay ko ato kay ate man tika ehe😝. Bitaw sa lami kay iming handa sa imong debut HAHAHAHA. Aside from that silly jokes dapat way limtanay kay We stand with Seventeen. Og higit sa lahat walang susuko hanggat hindi mayaman kay TAMILIAN TAG SUD AN.</p>
+        <span class="closeBtn" onclick="hideBox()">X</span>
+      </div>
+    </div>
+
     <div class="content-box-text">
       <div class="text-content-text">
         <p><b>Name: </b>Princess Haneyah R. Sani</p>
@@ -51,17 +62,7 @@
         <img src="img/Areola.jpg">  
     </div>
 
-    <script>
-        document.querySelectorAll('.image-container-image img').forEach(image =>{
-          image.onclick = () =>{
-            document.querySelector('.popup').style.display = 'block';
-            document.querySelector('.popup img').src = image.getAttribute('src');
-          }
-        });
-        document.querySelector('.popup span').onclick = () => {
-          document.querySelector('.popup').style.display = 'none';
-        }
-      </script>
+    <script src="../students.js"></script>
     
 </body>
 

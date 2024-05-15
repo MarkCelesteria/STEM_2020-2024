@@ -12,14 +12,23 @@
 <body>
     <div class="content-box">
         <div class="image-container">
-            <img src="../Picture/Sumile2.jpg" alt="Ayesha Macabangkit">
+            <img src="img/Trail Grad.jpg" alt="Ayesha Macabangkit">
         </div>
         <div class="text-content">
             <p class=quotes>"If its not for you, then it's not for you"</p>
             <p>Dahil clout chaser ako.</p>
-            <p>Wag ka kasi panay sunod sakanya ayan tuloy <i>"lumilipad nanaman yung isip ko"</i> dapay kasi palaging unahin school.</p>
+            <br><a onclick="showBox()">More...</a>
         </div>
     </div><br><br>
+
+    <div class="word-box" onclick="hideBox(event)">
+      <div class="myBox">
+        <p><b>What People Around You thinks of You.</b></p>
+        <p>Hi aye🤗, akong sunod sa name hahha last year dpa jud ta kaayo close ba Karun rajud year naow magbulag² nata, ka miss akn cka aye😔 prilai ako nga bdn if naa Koy sakit na nakuan nimo. Basta ayaw ko kalimti ow. Fighting lang jud ta ani aye. May your journey ahead be filled with joy, success, and new adventures. Keep shining bright! Until we meet again aye🤗☺️.</p>
+        <span class="closeBtn" onclick="hideBox()">X</span>
+      </div>
+    </div>
+
     <div class="content-box-text">
       <div class="text-content-text">
         <p><b>Name: </b>Ayesha Bae Calimah Macabangkit</p>
@@ -49,17 +58,7 @@
       <img src="img/Areola.jpg">  
     </div>
 
-    <script>
-      document.querySelectorAll('.image-container-image img').forEach(image =>{
-        image.onclick = () =>{
-          document.querySelector('.popup').style.display = 'block';
-          document.querySelector('.popup img').src = image.getAttribute('src');
-        }
-      });
-      document.querySelector('.popup span').onclick = () => {
-        document.querySelector('.popup').style.display = 'none';
-      }
-    </script>
+    <script src="../students.js"></script>
     
 </body>
 

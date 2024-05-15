@@ -172,6 +172,7 @@ p a {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    text-align: justify;
 }
 .myBox b {
     justify-content: center;

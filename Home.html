@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="shortcut icon" type="x-icon" href="Students\Logo\STEM Logo.png">
+    <link rel="shortcut icon" type="x-icon" href="Students\Logo\Logo.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>STEM 22-24</title>
@@ -275,11 +275,20 @@
         </div>
     </div>
 
-    <p id="Video">Memories</p>
+    <p id="Video" onclick="showBox()">Memories</p>
     <div class="content-box">
       <div class="image-container-image">
         <video id="myVideo" controls src="Video/Trial Vid.mp4"></video>
         <video id="myVideo" controls src="Video/PE.mp4"></video>
+      </div>
+    </div>
+
+    <div class="word-box" onclick="hideBox(event)">
+      <div class="myBox">
+        <p><b>A Message of Someone to All</b></p>
+        <p>Wala akong masabi hahahah, no, you guys are my friends and frenemies but im so grateful and happy jud nga kamo tanan akong na classmates for 2 years, don't forget your classmates and even for years na di ta magkita if ever na makasabay ta sa jeep ba kay pinansinay ta ha, i will miss you guys</p>
+        
+        <span class="closeBtn" onclick="hideBox()">X</span>
       </div>
     </div>
 
