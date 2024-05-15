@@ -6,37 +6,45 @@
     <link rel="shortcut icon" type="x-icon" href="Logo\STEM Logo.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../students.css">
-    <title>Students</title>
+    <title>STEM 22-24</title>
 </head>
 
 <body>
     <div class="content-box">
         <div class="image-container">
-            <img src="../Picture/Sumile2.jpg" alt="Joahanna Barrera">
+            <img src="img/Trail Grad.jpg" alt="Barrera">  
         </div>
         <div class="text-content">
-            <p class=quotes>"The greatest glory in living lies not in never falling, but in rising every time we fall"</p>
-            <p>Strong person with joyful personality, she tends to help every one ineed however she almost never tends to ask for someone's help, but she wanted to be helped.</p>
-            <p>Wag ka kasi panay sunod sakanya ayan tuloy <i>"lumilipad nanaman yung isip ko"</i> dapay kasi palaging unahin school.</p>
-        </div>
+            <p class=quotes>""</p>
+            <p><b>Why do you choose STEM? </b><i>""</i></p>
+            <br><a onclick="showBox()">More...</a>
+        </div>  
     </div><br><br>
+
+    <div class="word-box" onclick="hideBox(event)">
+      <div class="myBox">
+        <p><b>What People Around You thinks of You.</b></p>
+        <p>You are meant for greater things in life. You might not be one of the top. But remember, the world is round they might be up there now but tomorrow they may not. So do what you love and never compare yourself to anyone.</p>
+        <span class="closeBtn" onclick="hideBox()">X</span>
+      </div>
+    </div>
+
     <div class="content-box-text">
       <div class="text-content-text">
-        <p><b>Name: </b>Joahanna Barrera</p>
-        <p><b>Age: </b>18</p>
-        <p><b>Birth Date: </b>October , </p>
-        <p><b>Sex: </b>Female</p>
-        <p><b>Hobbies: </b>Sleeping during class</p>
-        <p><b>Skills & Tallent: </b>Dancing, Singin, Bullying, </p>
+        <p><b>Name: </b>Joahanna  L. Barrera</p>
+        <p><b>Age: </b></p>
+        <p><b>Status: </b></p>
+        <p><b>Birth Date: </b></p>
+        <p><b>Sex: </b></p>
+        <p><b>Hobbies: </b></p>
+        <p><b>Skills & Tallent: </b></p>
         <p><b>Best Friends: </b>
+
       </div>
     </div><br><br>
     <div class="content-box">
       <div class="image-container-image">
-        <img src="img/Areola.jpg">
-        <img src="Picture/Sumile2.jpg">
-        <img src="">
-        <img src="">
+
       </div>
     </div><br><br>
 
@@ -48,17 +56,7 @@
       <img src="img/Areola.jpg">  
     </div>
 
-    <script>
-      document.querySelectorAll('.image-container-image img').forEach(image =>{
-        image.onclick = () =>{
-          document.querySelector('.popup').style.display = 'block';
-          document.querySelector('.popup img').src = image.getAttribute('src');
-        }
-      });
-      document.querySelector('.popup span').onclick = () => {
-        document.querySelector('.popup').style.display = 'none';
-      }
-    </script>
+    <script src="../students.js"></script>
     
 </body>
 
