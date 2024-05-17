@@ -150,7 +150,8 @@ body {
   background-color: #650B0BDB;
   border: 2px solid #ccc;
   border-radius: 10px;
-  height: auto;
+  height: 600px;
+  overflow: scroll;
 } 
 
 .popup {
@@ -239,6 +240,13 @@ a:hover {
   background-color: #650000;
   color:white;
   cursor: pointer;
+}
+.myVideo::-webkit-media-controls {
+  visibility: hidden;
+}
+
+.myVideo:hover::-webkit-media-controls {
+  visibility: visible;
 }
 .word-box {
   position: fixed;

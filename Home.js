@@ -73,3 +73,25 @@ function hideBox(e) {
     document.querySelector('.word-box').style.display = "none";
   }
 };
+
+var vids = document.getElementsByClassName("myVideo");
+
+for (let i = 0; i < vids.length; i++) {
+  vids[i].addEventListener("mouseover", function() {
+    this.load();
+  });
+
+  vids[i].addEventListener("play", function() {
+    this.load();
+  });
+}
+
+for (let i = 0; i < vids.length; i++) {
+  vids[i].addEventListener("mouseover", function() {
+    this.controls = true;
+  });
+
+  vids[i].addEventListener("mouseout", function() {
+    this.controls = false;
+  });
+}
