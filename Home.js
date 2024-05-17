@@ -77,12 +77,12 @@ function hideBox(e) {
 var vids = document.getElementsByClassName("myVideo");
 
 for (let i = 0; i < vids.length; i++) {
+  vids[i].isLoaded = false;
   vids[i].addEventListener("mouseover", function() {
-    this.load();
-  });
-
-  vids[i].addEventListener("play", function() {
-    this.load();
+    if (!this.isLoaded) {
+      this.load();
+      this.isLoaded = true;
+    }
   });
 }
 
