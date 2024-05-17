@@ -22,12 +22,14 @@ body {
   justify-content: center;
 }
 .logo {
-  margin-right:50px;
+  margin-left:70px;
 }
 .navbar img{
-  height: 50px;
-  width: 50px;
-  align-items: center;
+  height: 65px;
+  width: 65px;
+  flex: 0;
+  position: absolute;
+  border-radius: 50%;
 }
 .list {
   list-style: none;
@@ -35,6 +37,7 @@ body {
   pointer-events: none;
   gap: 10px;
   justify-content: right;
+  margin-left: 20px;
 }
 .list *{
   transition: 0.2s
@@ -58,6 +61,7 @@ body {
     width: 100%;
     max-height: 0;
     overflow: hidden;
+    display: none;
   }
   .list {
     flex-direction: column;
