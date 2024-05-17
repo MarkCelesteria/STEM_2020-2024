@@ -78,7 +78,7 @@ var vids = document.getElementsByClassName("myVideo");
 
 for (let i = 0; i < vids.length; i++) {
   vids[i].isLoaded = false;
-  vids[i].addEventListener("mouseover", function() {
+  vids[i].addEventListener("play", function() {
     if (!this.isLoaded) {
       this.load();
       this.isLoaded = true;
