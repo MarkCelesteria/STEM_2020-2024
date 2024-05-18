@@ -140,7 +140,7 @@ p a {
       width: auto;
     }
   }
-@media (max-width: 700px) {
+@media (max-width: 1000px) {
     .popup img {
         height: auto;
         width: 95%;
