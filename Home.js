@@ -75,6 +75,26 @@ function hideBox(e) {
 };
 
 var vids = document.getElementsByClassName("myVideo");
+var options = {
+  root: null,
+  rootMargin: '0px',
+  threshold: 0.1
+};
+
+var observer = new IntersectionObserver((entries, observer) => {
+  entries.forEach(entry => {
+    if (!entry.isIntersecting) {
+      entry.target.pause();
+      entry.target.src = "";
+      entry.target.isLoaded = false;
+    } else {
+      if (!entry.target.isLoaded) {
+        entry.target.load();
+        entry.target.isLoaded = true;
+      }
+    }
+  });
+}, options);
 
 for (let i = 0; i < vids.length; i++) {
   vids[i].isLoaded = false;
@@ -84,6 +104,7 @@ for (let i = 0; i < vids.length; i++) {
       this.isLoaded = true;
     }
   });
+  observer.observe(vids[i]);
 }
 
 for (let i = 0; i < vids.length; i++) {
