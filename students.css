@@ -145,10 +145,12 @@ p a {
         height: auto;
         width: 95%;
     }
+}
+@media (max-width: 600px) {
     .image-container img {
         display: none;
     }
-  }
+}
 .word-box {
     position: fixed;
     top: 0; ; left: 0;
