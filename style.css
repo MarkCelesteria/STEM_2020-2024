@@ -150,7 +150,7 @@ body {
   background-color: #650B0BDB;
   border: 2px solid #ccc;
   border-radius: 10px;
-  height: 190px;
+  height: 500px;
   overflow: scroll;
 } 
 
@@ -189,6 +189,10 @@ body {
   .popup img {
     height: auto;
     width: 95%;
+  }
+  .navbar img{
+    height: 40px;
+    width: 40px;
   }
 }
 
