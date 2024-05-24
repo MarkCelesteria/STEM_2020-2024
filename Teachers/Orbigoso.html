@@ -15,11 +15,20 @@
             <img src="../Orbigoso/Sani.jpg" alt="Johanna">
         </div>
         <div class="text-content">
-            <p class=quotes>"You cannot help others without helping "</p>
+            <p class=quotes>"You cannot help others without helping yourself"</p>
             <p>Bakit ka nag Teacher: <i>"Kay scholar sa DOST"</i></p>
-            <p></p>
+            <br><a onclick="showBox()">More...</a>
         </div>
     </div><br><br>
+
+    <div class="word-box" onclick="hideBox(event)">
+      <div class="myBox">
+        <p><b>What People Around You thinks of You.</b></p>
+        <p>Ma'am Jo, thankyou for teaching us something interesting about biology. Thankyou kay we experience something na dili nako expect ma experience nako sa akong life tong sa microscope, tong sa baki HAHAHA and many others interesting about sa imong subject. Thankyou for teaching us and thankyou for being the best adviser.</p>
+        <span class="closeBtn" onclick="hideBox()">X</span>
+      </div>
+    </div>
+
     <div class="content-box-text">
       <div class="text-content-text">
         <p><b>Name: </b>Johanna Jane C. Orbigoso</p>
@@ -27,8 +36,8 @@
         <p><b>Birth Date: </b>January 17, 19##</p>
         <p><b>Status: </b>Choose Daddy</p>
         <p><b>Sex: </b>Female</p>
-        <p><b>Hobbies: </b>Checking Research, Readung Novel</p>
-        <p><b>Skills & Tallent: </b>Chess</p>
+        <p><b>Hobbies: </b>Checking Research, Reading Novel</p>
+        <p><b>Skills & Talent: </b>Chess</p>
         <p><b>Best Friends: </b><a href="Nijaga.html">Daddy Sheim</a></p>
 
       </div>
@@ -49,17 +58,7 @@
         <img src="img/Areola.jpg">  
     </div>
 
-    <script>
-        document.querySelectorAll('.image-container-image img').forEach(image =>{
-          image.onclick = () =>{
-            document.querySelector('.popup').style.display = 'block';
-            document.querySelector('.popup img').src = image.getAttribute('src');
-          }
-        });
-        document.querySelector('.popup span').onclick = () => {
-          document.querySelector('.popup').style.display = 'none';
-        }
-      </script>
+    <script src="../students.js"></script>
     
 </body>
 

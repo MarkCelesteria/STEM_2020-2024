@@ -17,9 +17,18 @@
         <div class="text-content">
             <p class=quotes>""</p>
             <p>Bakit ka nag Teacher: <i>"Tongod ni Tony Stark"</i></p>
-            <p></p>
+            <br><a onclick="showBox()">More...</a>
         </div>
     </div><br><br>
+
+    <div class="word-box" onclick="hideBox(event)">
+      <div class="myBox">
+        <p><b>What People Around You thinks of You.</b></p>
+        <p>Thankyou sir sheim for teaching us about Math and expanding our knowledge in math and learning how to solve, thanykou for being us your time po teaching us cool and interesting thing in physics. Thankyou for giving us the experience for the laboratory.</p>
+        <span class="closeBtn" onclick="hideBox()">X</span>
+      </div>
+    </div>
+
     <div class="content-box-text">
       <div class="text-content-text">
         <p><b>Name: </b>Sheim Daneil G. Nijaga</p>
@@ -29,7 +38,7 @@
         <p><b>Status: </b>Single at the Moment</p>
         <p><b>Sex: </b>Male</p>
         <p><b>Hobbies: </b>F1 Racing, Thrill Video, Electric Guitar</p>
-        <p><b>Skills & Tallent: </b>Solving</p>
+        <p><b>Skills & Talent: </b>Solving</p>
         <p><b>Best Friends: </b>
           <a href="Orbigoso.html">Mommy Jo</a>
 
@@ -51,17 +60,7 @@
         <img src="img/Areola.jpg">  
     </div>
 
-    <script>
-        document.querySelectorAll('.image-container-image img').forEach(image =>{
-          image.onclick = () =>{
-            document.querySelector('.popup').style.display = 'block';
-            document.querySelector('.popup img').src = image.getAttribute('src');
-          }
-        });
-        document.querySelector('.popup span').onclick = () => {
-          document.querySelector('.popup').style.display = 'none';
-        }
-      </script>
+    <script src="../students.js"></script>
     
 </body>
 
