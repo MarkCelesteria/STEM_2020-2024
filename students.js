@@ -14,11 +14,10 @@ document.querySelectorAll('.image-container-image img').forEach(image =>{
     document.querySelector('.popup').style.display = 'none';
   }
 
-  function showBox() {
-    document.querySelector('.myBox').style.display = "block";
-    document.querySelector('.word-box').style.display = "block";
-  }
-
+  // function showBox() {
+  //   document.querySelector('.myBox').style.display = "block";
+  //   document.querySelector('.word-box').style.display = "block";
+  // }
   function hideBox(e) {
     if (!e.target.classList.contains('myBox')) {
       document.querySelector('.myBox').style.display = "none";
