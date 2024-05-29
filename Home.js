@@ -18,6 +18,14 @@ document.querySelectorAll('.btn').forEach(btn => {
   });
 });
 
+document.getElementById('Album').addEventListener('click', function() {
+  var albumImages = document.getElementsByClassName('album');
+
+  for (var i = 0; i < albumImages.length; i++) {
+    albumImages[i].style.display = 'block';
+  }
+});
+
 document.querySelectorAll('.image-container-image img').forEach(image =>{
     image.onclick = () =>{
         document.querySelector('.popup').style.display = 'block';
@@ -115,4 +123,15 @@ for (let i = 0; i < vids.length; i++) {
   vids[i].addEventListener("mouseout", function() {
     this.controls = false;
   });
+}
+
+window.onload = function() {
+  document.getElementById('loadImagesButton').addEventListener('click', function() {
+    var images = document.querySelectorAll('.album');
+  
+    for (var i = 0; i < images.length; i++) {
+      images[i].src = images[i].getAttribute('src');
+    }
+  });
+  
 }

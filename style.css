@@ -56,6 +56,9 @@ body {
 .btn {
   cursor: pointer;
 }
+.btnA {
+  cursor: pointer;
+}
 @media (max-width: 600px) {
   .menu {
     width: 100%;
@@ -300,6 +303,9 @@ a:hover {
   text-align: center;
   background-color: #650000;
   color:white;
+}
+.album {
+  display: none;
 }
 #About {
   font-size: 40px;
