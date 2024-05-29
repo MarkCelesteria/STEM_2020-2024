@@ -70,10 +70,15 @@ closeButton.onclick = function() {
   closeButton.style.display = "none";
 };
 
-// function showBox() {
-//   document.querySelector('.myBox').style.display = "block";
-//   document.querySelector('.word-box').style.display = "block";
-// };
+function showBox() {
+  document.querySelector('.myBox').style.display = "block";
+  document.querySelector('.word-box').style.display = "block";
+  
+  var wordBox = document.querySelector('#textContainer');
+  wordBox.style.display = "block";
+  wordBox.style.textAlign = "center";
+  textContainer.textContent = 'Currently Been Sealed';
+};
 function hideBox(e) {
   if (!e.target.classList.contains('myBox')) {
     document.querySelector('.myBox').style.display = "none";
